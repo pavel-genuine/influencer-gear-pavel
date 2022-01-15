@@ -17,12 +17,31 @@ body{
     margin-top: 100px;
 }
 
-header {
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ #toggler, .fa-bars{
+
+    display: none;
+}
+
+header p{
    
     font-size: 24px;
-    font-weight: 700;
-   
+    font-weight: 700;  
+}
+
+header ul{
+    display: flex;
     
+ 
+}
+
+header li {
+    list-style: none;
+    margin-left: 30px;
 }
 
 .first-article{
@@ -165,6 +184,36 @@ footer{
 }
 
   @media only screen and (max-width:688px) {
+
+
+    .fa-bars{
+        display: block;
+        position: fixed;
+        top: 110px;
+        right: 30px;
+    }
+
+
+    nav{ 
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        top: 150px;
+        transform: translatex(700px);
+       
+        transition: .2s ease-in;
+        padding: 20px 0;
+     }
+
+ 
+
+    #toggler:checked~nav{
+        display: block;
+        transform: translateX(0);
+    }
+
 
    
     .first-article{
