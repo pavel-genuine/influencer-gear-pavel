@@ -36,7 +36,7 @@ button {
 }
 
 button:active {
-    transform:  translateY(-10px) scale(1.2);
+    transform:  translateX(25px) scale(1.1);
     
 }
 
@@ -59,8 +59,7 @@ button p {
 
     display: none;
 }
-.fa-bars{
-
+.fas.fa-bars{
     display: none;
 }
 
@@ -81,6 +80,9 @@ header li {
     margin-left: 30px;
 }
 
+.fas, .fab {
+    margin-right: 5px;
+}
 
 /* First article css=============
 ================================= */
@@ -110,6 +112,7 @@ header li {
 .first-right img{
  width: 90%;
  margin-bottom: 20px;
+ margin-left: 30px;
  transition: .3s ease-in-out;
 }
 
@@ -146,6 +149,10 @@ header li {
 .product-price{
     font-size: 16px;
    
+}
+
+.product-rating .fas {
+    color: goldenrod;
 }
 
 .product-detail p {
@@ -192,7 +199,7 @@ color:rgb(219, 40, 100);
     justify-content: flex-start;
     flex-direction: column;
     
-    margin-top: 50px;
+    margin-top: 30pxpx;
     
 }
 input, textarea{
@@ -215,17 +222,19 @@ footer{
 }
 
 
+
+
 /* Media query css =======================
 ========================================== */
 
   @media only screen and (max-width:688px) {
 
 
-    .fa-bars{
+   .fas.fa-bars{
         display: block;
         position: fixed;
         top: 110px;
-        right: 30px;
+        right: 25px;
         color:rgb(219, 40, 100);
     }
 
@@ -259,8 +268,10 @@ footer{
 
   .first-left p{
       font-size: .8em;
+      margin-right: 20px;
      
   }
+
   .products{
       display:grid;
       grid-template-columns: 1fr ;
@@ -274,7 +285,7 @@ footer{
 
 .contact-left-img{
     display: none;
-    order: 2;
+  
 }
 
 .contact-form{
@@ -294,7 +305,7 @@ footer{
    .products{
        display:grid;
        grid-template-columns: 1fr 1fr ;
-       gap: 10px;
+       gap: 50px;
    }
  
  .contact-left-img{
