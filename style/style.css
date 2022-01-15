@@ -10,11 +10,44 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* Common css ==========
+======================= */
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding:0 30px;
     margin-top: 100px;
+}
+
+button {
+
+    background-color: rgb(219, 40, 100);
+    color: white;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+button:active {
+    transform:  translateY(-10px) scale(1.2);
+    
+}
+
+button p {
+    margin-right: 10px;
+}
+
+.container h2{
+
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .navbar{
@@ -48,6 +81,10 @@ header li {
     margin-left: 30px;
 }
 
+
+/* First article css=============
+================================= */
+
 .first-article{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -68,23 +105,7 @@ header li {
     margin-bottom: 15px;
 }
 
- button {
 
-    background-color: rgb(219, 40, 100);
-    color: white;
-    margin-top: 30px;
-    padding: 10px 20px;
-    font-size: 16px;;
-    font-weight: 600;
-    border-radius: 30px;
-    border: 0;
-    display: flex;
-    align-items: center;
-}
-
-button p {
-    margin-right: 10px;
-}
 
 .first-right img{
  width: 90%;
@@ -97,15 +118,10 @@ button p {
    
     transition: .3s ease-in-out;
    
-    
-   
 }
 
-.container h2{
-
-    text-align: center;
-    margin-bottom: 40px;
-}
+/* Products section css==============
+===================================== */
 
 .products{
     display: grid;
@@ -148,6 +164,11 @@ font-size: 18px;
 color:rgb(219, 40, 100);
     
 }
+
+
+/* Contact form css===============
+================================== */
+
 .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +202,9 @@ input, textarea{
     border: 1px solid black;
 }
 
+/* Footer section css==============
+=================================== */
+
 footer{
     text-align: center;
     color: white;
@@ -189,6 +213,10 @@ footer{
     width: 100%;
     margin-top: 50px;
 }
+
+
+/* Media query css =======================
+========================================== */
 
   @media only screen and (max-width:688px) {
 
