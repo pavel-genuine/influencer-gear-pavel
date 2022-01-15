@@ -191,6 +191,7 @@ footer{
         position: fixed;
         top: 110px;
         right: 30px;
+        color:rgb(219, 40, 100);
     }
 
 
@@ -198,11 +199,11 @@ footer{
         position: fixed;
         left: 0;
         width: 100%;
-        background-color: black;
-        color: white;
+        background-color: rgba(219, 40, 100, 0.76);
+        color:white;
         top: 150px;
         transform: translatex(700px);
-       
+       z-index: 1;
         transition: .2s ease-in;
         padding: 20px 0;
      }
