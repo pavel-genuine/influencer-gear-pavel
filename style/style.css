@@ -22,7 +22,11 @@ body{
     align-items: center;
     justify-content: space-between;
 }
- #toggler, .fa-bars{
+ #toggler{
+
+    display: none;
+}
+.fa-bars{
 
     display: none;
 }
@@ -83,14 +87,15 @@ button p {
 }
 
 .first-right img{
-    width: 90%;
+ width: 90%;
  margin-bottom: 20px;
+ transition: .3s ease-in-out;
 }
 
 .first-right img:hover {
   transform: scale(1.1);
    
-    transition: .3s ease-in;
+    transition: .3s ease-in-out;
    
     
    
